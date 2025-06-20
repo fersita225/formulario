@@ -1,0 +1,123 @@
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 30px;
+    }
+
+    header, footer {
+      background-color: #000;
+      color: #0ff;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      animation: glow 3s ease-in-out infinite alternate;
+      border-radius: 20px;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #0ff;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      background-color: #0ff;
+      color: #000;
+    }
+
+    .form-container {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #0ff;
+      border-radius: 15px;
+      padding: 35px;
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+      to { box-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+    }
+
+    h2, h5 {
+      text-align: center;
+      color: white;
+    }
+
+    label {
+      color: #0ff;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+      background-color: #222;
+      color: #0ff;
+      outline: none;
+      box-shadow: 0 0 5px #0ff inset;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      box-shadow: 0 0 10px #0ff inset, 0 0 5px #0ff;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .star {
+      font-size: 24px;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .star.selected {
+      color: #0ff;
+      transform: scale(1.2);
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      background-color: #0ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #00ffffcc;
+      box-shadow: 0 0 10px #0ff;
+    }
